@@ -2030,13 +2030,21 @@
       navbar.classList.toggle('scrolled', window.scrollY > 60);
     }, { passive: true });
 
-    // ---- Hero parallax ----
+    // ---- Hero parallax (desktop only — disabled on mobile to prevent scroll jank) ----
     const heroVideo = document.getElementById('heroVideo');
-    window.addEventListener('scroll', () => {
-      if (heroVideo && window.scrollY < window.innerHeight) {
-        heroVideo.style.transform = `scale(1.08) translateY(${window.scrollY * 0.25}px)`;
-      }
-    }, { passive: true });
+    if (heroVideo && window.matchMedia('(min-width: 1025px) and (hover: hover)').matches) {
+      let rafPending = false;
+      window.addEventListener('scroll', () => {
+        if (rafPending) return;
+        rafPending = true;
+        requestAnimationFrame(() => {
+          if (window.scrollY < window.innerHeight) {
+            heroVideo.style.transform = `scale(1.08) translateY(${window.scrollY * 0.25}px)`;
+          }
+          rafPending = false;
+        });
+      }, { passive: true });
+    }
 
     // ---- Mobile menu ----
     const hamburger = document.getElementById('hamburger');
