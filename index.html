@@ -7,7 +7,9 @@
   <meta name="description" content="AutoTrek Service Center — Professional automotive repair, maintenance, and diagnostics. Trusted by thousands of drivers." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="dns-prefetch" href="https://images.unsplash.com" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800;900&display=swap" /></noscript>
   <style>
     /* ============================================
        DESIGN TOKENS
@@ -1383,7 +1385,7 @@
     <div class="container">
       <div class="nav-inner">
         <a href="#" class="nav-logo">
-          <img src="Images/Logo/AutoTrek_Logo_NO_BCKGRND.png" alt="AutoTrek Service Center" />
+          <picture><source srcset="Images/Logo/AutoTrek_Logo_NO_BCKGRND.webp" type="image/webp" /><img src="Images/Logo/AutoTrek_Logo_NO_BCKGRND.png" alt="AutoTrek Service Center" fetchpriority="high" /></picture>
         </a>
         <ul class="nav-links">
           <li><a href="#services">Services</a></li>
@@ -1421,7 +1423,7 @@
   <!-- ============ HERO ============ -->
   <section id="hero">
     <div class="hero-bg" id="heroBg">
-      <video id="heroVideo" autoplay muted loop playsinline preload="auto">
+      <video id="heroVideo" autoplay muted loop playsinline preload="metadata">
         <source src="video/hero.mp4" type="video/mp4" />
         <source src="video/hero.webm" type="video/webm" />
       </video>
@@ -1501,7 +1503,7 @@
         <!-- Oil Change -->
         <div class="service-card reveal delay-1">
           <div class="service-icon-wrap">
-            <img src="Images/Services/Oil_AutoTrek.png" alt="Oil Change Service" loading="lazy" />
+            <picture><source srcset="Images/Services/Oil_AutoTrek.webp" type="image/webp" /><img src="Images/Services/Oil_AutoTrek.png" alt="Oil Change Service" loading="lazy" /></picture>
           </div>
           <h3>Oil Change &amp; Fluids</h3>
           <p>Conventional, synthetic, and high-mileage oil changes. Full fluid check included with every service.</p>
@@ -1512,7 +1514,7 @@
         <!-- Brake -->
         <div class="service-card reveal delay-2">
           <div class="service-icon-wrap">
-            <img src="Images/Services/brake_AutoTrek.png" alt="Brake Repair Service" loading="lazy" />
+            <picture><source srcset="Images/Services/brake_AutoTrek.webp" type="image/webp" /><img src="Images/Services/brake_AutoTrek.png" alt="Brake Repair Service" loading="lazy" /></picture>
           </div>
           <h3>Brake Repair</h3>
           <p>Pad replacement, rotor resurfacing, caliper service, and complete brake system inspections for your safety.</p>
@@ -1523,7 +1525,7 @@
         <!-- Tires -->
         <div class="service-card reveal delay-3">
           <div class="service-icon-wrap">
-            <img src="Images/Services/Alignment_AutoTrek.png" alt="Tire & Alignment Service" loading="lazy" />
+            <picture><source srcset="Images/Services/Alignment_AutoTrek.webp" type="image/webp" /><img src="Images/Services/Alignment_AutoTrek.png" alt="Tire & Alignment Service" loading="lazy" /></picture>
           </div>
           <h3>Tires &amp; Alignment</h3>
           <p>Tire rotation, balancing, mounting, and precision wheel alignment to extend tire life and fuel efficiency.</p>
@@ -1534,7 +1536,7 @@
         <!-- Diagnostics -->
         <div class="service-card reveal delay-2">
           <div class="service-icon-wrap">
-            <img src="Images/Services/Diag_AutoTrek.png" alt="Engine Diagnostics Service" loading="lazy" />
+            <picture><source srcset="Images/Services/Diag_AutoTrek.webp" type="image/webp" /><img src="Images/Services/Diag_AutoTrek.png" alt="Engine Diagnostics Service" loading="lazy" /></picture>
           </div>
           <h3>Engine Diagnostics</h3>
           <p>Advanced OBD-II computer diagnostics and comprehensive engine analysis to pinpoint any issue fast.</p>
@@ -1545,7 +1547,7 @@
         <!-- AC -->
         <div class="service-card reveal delay-3">
           <div class="service-icon-wrap">
-            <img src="Images/Services/AC_Heating_AutoTrek.png" alt="AC & Heating Service" loading="lazy" />
+            <picture><source srcset="Images/Services/AC_Heating_AutoTrek.webp" type="image/webp" /><img src="Images/Services/AC_Heating_AutoTrek.png" alt="AC & Heating Service" loading="lazy" /></picture>
           </div>
           <h3>AC &amp; Heating</h3>
           <p>Full A/C system recharge, leak detection, heater core repair, and climate control diagnostics.</p>
@@ -1556,7 +1558,7 @@
         <!-- Transmission -->
         <div class="service-card reveal delay-4">
           <div class="service-icon-wrap">
-            <img src="Images/Services/Transmisson_AutoTrek.png" alt="Transmission Service" loading="lazy" />
+            <picture><source srcset="Images/Services/Transmisson_AutoTrek.webp" type="image/webp" /><img src="Images/Services/Transmisson_AutoTrek.png" alt="Transmission Service" loading="lazy" /></picture>
           </div>
           <h3>Transmission Service</h3>
           <p>Fluid flushes, filter replacement, rebuild, and full diagnostic for automatic and manual transmissions.</p>
@@ -1587,7 +1589,7 @@
         <div class="stat-label">Customer Satisfaction</div>
       </div>
       <div class="stat-item reveal delay-3" style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center;">
-        <img src="Images/Logo/ASE-logo-350.png" alt="ASE Certified" class="ase-spin" style="height: 80px; width: auto; margin-bottom: 0.75rem;" />
+        <picture><source srcset="Images/Logo/ASE-logo-350.webp" type="image/webp" /><img src="Images/Logo/ASE-logo-350.png" alt="ASE Certified" class="ase-spin" style="height: 80px; width: auto; margin-bottom: 0.75rem;" loading="lazy" /></picture>
         <div class="stat-label">ASE Certified Techs</div>
       </div>
     </div>
@@ -1879,8 +1881,8 @@
             </div>
             <!-- Right: certification logos -->
             <div style="display: flex; flex-direction: column; align-items: center; gap: 1.25rem; padding-top: 0.25rem; min-width: 110px;">
-              <img src="Images/Logo/ASE-logo-350.png" alt="ASE Certified" style="width: 100px; height: auto; display: block;" />
-              <img src="Images/Logo/Napa_NO_BG.png" alt="NAPA AutoCare Center" style="width: 100px; height: auto; display: block;" />
+              <picture><source srcset="Images/Logo/ASE-logo-350.webp" type="image/webp" /><img src="Images/Logo/ASE-logo-350.png" alt="ASE Certified" style="width: 100px; height: auto; display: block;" loading="lazy" /></picture>
+              <picture><source srcset="Images/Logo/Napa_NO_BG.webp" type="image/webp" /><img src="Images/Logo/Napa_NO_BG.png" alt="NAPA AutoCare Center" style="width: 100px; height: auto; display: block;" loading="lazy" /></picture>
             </div>
           </div>
           <!-- Google Map -->
@@ -1954,7 +1956,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-logo">
-          <img src="Images/Logo/AutoTrek_Logo_NO_BCKGRND.png" alt="AutoTrek Service Center" />
+          <picture><source srcset="Images/Logo/AutoTrek_Logo_NO_BCKGRND.webp" type="image/webp" /><img src="Images/Logo/AutoTrek_Logo_NO_BCKGRND.png" alt="AutoTrek Service Center" loading="lazy" /></picture>
           <p class="footer-desc">
             AutoTrek Service Center — your trusted partner for expert automotive care. Quality repairs, honest pricing, and a commitment to keeping you safely on the road.
           </p>
